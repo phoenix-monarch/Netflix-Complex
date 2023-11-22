@@ -160,7 +160,7 @@ const myApi = "6b2dec73b6697866a50cdaef60ccffcb";
 
 const NowPlaying = async () => {
     const res = await fetch(
-        `https://www.2embed.cc/embed/${tmdbID}&language=en-US&page=1`
+        `https://multiembed.mov/directstream.php?video_id=${tmdbID}&tmdb=1`
     );
     const data = await res.json();
     const NowPlayingmovies = data.results;
